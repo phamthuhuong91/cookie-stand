@@ -1,1 +1,5 @@
-# cookie-stand
+# cookie-stand - Lighthouse report
+
+Lab 6
+
+![Lab 6](lab6.png)
