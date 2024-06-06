@@ -36,7 +36,7 @@ li {
     color:black;
 }
 
-main {
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -61,5 +61,43 @@ footer {
     background-color: silver;
     padding: 3%;
     text-align: center;
+}
+
+th, td:last-child, table #tfooter {
+    color: white;
+    background-color: grey;
+    text-align: center;
+    border-style: none;
+    padding: 10px;
+    border-color: white;
+    font-weight: bold;
+}
+
+table, tr:not(:last-child) td:not(:last-child) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: salmon;
+    padding: 10px;
+}
+
+legend {
+    margin-left: 3%;
+    margin-bottom: 1%;
+    font-family: 'Righteous',sans-serif;
+    color: salmon;    
+}
+
+label:first-of-type {
+    margin-left: 3%;
+}
+
+input[type=number] {
+    width: 5%;
+    margin-bottom: 5px;
+    margin-right: 10px;
 }
 

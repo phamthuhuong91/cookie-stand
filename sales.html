@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <script src="app.js"></script>
   </head>
-  <body onload="sales()">
+  <body>
+    
     <header>
       <h1>Welcome to Pat's Salmon Cookies!</h1>
       <nav>
@@ -22,9 +22,30 @@
         </ul>
       </nav>
     </header>
+    
     <main>
-      <p id = "data"></p>  
+      <form id ="form">
+        <fieldset>
+          <legend> Add a new store to the table!!!</legend>
+          <label for="location">Location Name</label>
+          <input type="text" id="location" name="location" required>
+          <label for="min_cus">Minimmum Customers per Hour</label>
+          <input type="number" id="min_cus" name="min_cus" required>
+          <label for="max_cus">Maximum Customers per Hour</label>
+          <input type="number" id="max_cus" name="max_cus" required>
+          <label for="avg_sales">Average Cookies per Sale</label>
+          <input type="number" id="avg_sale" name="avg_sale" step="0.1" required>
+          <input type="submit" id="submit" value="Click here to add!">
+        </fieldset>
+      </form>
+
+      <table id ="table_sales"></table>
     </main>
+
+    <footer>
+      &#169; 2023 Pat's Salmon Cookies
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
 
